@@ -1,22 +1,50 @@
 //
-//  AppUpdateController.swift
+//  PermissionController.swift
 //  MarketFinder
 //
-//  Created by User on 2022/06/22.
+//  Created by User on 2022/08/04.
 //
 
 import UIKit
+import FontAwesome_swift
 
-enum AppUpdate {
-    case require, optional
+enum Permission: String {
+    case location
+    case push
+    
+    var icon:UIImage {
+        var iconName:FontAwesome = .map
+        
+        switch self {
+            case .location:
+                iconName = .map
+            default:
+                iconName = .bell
+        }
+        
+        return UIImage.fontAwesomeIcon(name: iconName, style: .solid, textColor: .gray, size: CGSize(width: 15, height: 15))
+    }
+    
+    var content:String {
+        var content:String = ""
+        
+        switch self {
+            case .location:
+                content = "Required"
+            default:
+                content = "Required"
+        }
+        
+        return content.localized
+    }
 }
 
-class AppUpdateController: BaseController {
+class PermissoinController: BaseController {
     
     // MARK: - Properties
     private let infoView:BaseView = BaseView()
     
-    private let iconImage:BaseImageView = BaseImageView(name: .exclamationCircle, style: .solid, textColor: .gray, width: 15, height: 15)
+    private let iconImage:BaseImageView = BaseImageView()
 
     private let contentLabel:BaseLabel = BaseLabel(title: "")
     
@@ -41,10 +69,9 @@ class AppUpdateController: BaseController {
     }
     
     // MARK: - Function
-    func setInfoView(appUpdate: AppUpdate) -> Void {
-        let localizedText:String = appUpdate == .require ? "RequiredUpdateContent" : "OptionalUpdateContent"
-
-        self.contentLabel.text = localizedText.localized
+    func setInfoView(permission: Permission) -> Void {
+        self.iconImage.image = permission.icon
+        self.contentLabel.text = permission.content
     }
     
     private func setupLayout() -> Void {

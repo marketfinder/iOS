@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C68F05710E9F18C390DDC31B /* libPods-MarketFinder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2642D9EB8EEEB138D6C86C0 /* libPods-MarketFinder.a */; };
+		CE0864C4289AD45800F410AF /* PermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0864C3289AD45800F410AF /* PermissionController.swift */; };
+		CE0864C9289AD76900F410AF /* BaseStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0864C8289AD76900F410AF /* BaseStackView.swift */; };
+		CE0864CE289AD87200F410AF /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0864CD289AD87200F410AF /* UIStackView.swift */; };
+		CE0864D3289B942500F410AF /* UpdateInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0864D2289B942500F410AF /* UpdateInfoView.swift */; };
+		CE0864D8289B945B00F410AF /* RequireUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0864D7289B945B00F410AF /* RequireUpdateController.swift */; };
+		CE0864E0289B946700F410AF /* OptionalUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0864DF289B946700F410AF /* OptionalUpdateController.swift */; };
+		CE0864E5289BA99700F410AF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0864E4289BA99700F410AF /* String.swift */; };
+		CE0864EE289BAAB700F410AF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE0864F0289BAAB700F410AF /* Localizable.strings */; };
 		CEB332D028614E9600BB59D4 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB332C328614E9600BB59D4 /* BaseCollectionView.swift */; };
 		CEB332D128614E9600BB59D4 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB332C428614E9600BB59D4 /* BaseTableViewCell.swift */; };
 		CEB332D228614E9600BB59D4 /* BaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB332C528614E9600BB59D4 /* BaseTableController.swift */; };
@@ -56,6 +64,16 @@
 
 /* Begin PBXFileReference section */
 		162D00E20FD2136EF4E8891C /* Pods-MarketFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketFinder.release.xcconfig"; path = "Target Support Files/Pods-MarketFinder/Pods-MarketFinder.release.xcconfig"; sourceTree = "<group>"; };
+		CE0864C3289AD45800F410AF /* PermissionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionController.swift; sourceTree = "<group>"; };
+		CE0864C8289AD76900F410AF /* BaseStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStackView.swift; sourceTree = "<group>"; };
+		CE0864CD289AD87200F410AF /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
+		CE0864D2289B942500F410AF /* UpdateInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInfoView.swift; sourceTree = "<group>"; };
+		CE0864D7289B945B00F410AF /* RequireUpdateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequireUpdateController.swift; sourceTree = "<group>"; };
+		CE0864DF289B946700F410AF /* OptionalUpdateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalUpdateController.swift; sourceTree = "<group>"; };
+		CE0864E4289BA99700F410AF /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CE0864EF289BAAB700F410AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE0864F4289BAAE500F410AF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CE0864F5289BAAE500F410AF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEB332C328614E9600BB59D4 /* BaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		CEB332C428614E9600BB59D4 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		CEB332C528614E9600BB59D4 /* BaseTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableController.swift; sourceTree = "<group>"; };
@@ -127,6 +145,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE0864C2289AD44F00F410AF /* Permission */ = {
+			isa = PBXGroup;
+			children = (
+				CE0864C3289AD45800F410AF /* PermissionController.swift */,
+			);
+			path = Permission;
+			sourceTree = "<group>";
+		};
 		CEB332C228614E9600BB59D4 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +170,7 @@
 				CEB332CE28614E9600BB59D4 /* BaseView.swift */,
 				CEB332CF28614E9600BB59D4 /* BaseButton.swift */,
 				CEB332E028614F7A00BB59D4 /* BaseLabel.swift */,
+				CE0864C8289AD76900F410AF /* BaseStackView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -153,6 +180,8 @@
 			children = (
 				CEB332EB2861511900BB59D4 /* UIView.swift */,
 				CEB332EC2861511900BB59D4 /* UIImageView.swift */,
+				CE0864CD289AD87200F410AF /* UIStackView.swift */,
+				CE0864E4289BA99700F410AF /* String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -170,6 +199,9 @@
 			isa = PBXGroup;
 			children = (
 				CEB333092862A6B300BB59D4 /* AppUpdateController.swift */,
+				CE0864D2289B942500F410AF /* UpdateInfoView.swift */,
+				CE0864D7289B945B00F410AF /* RequireUpdateController.swift */,
+				CE0864DF289B946700F410AF /* OptionalUpdateController.swift */,
 			);
 			path = AppUpdate;
 			sourceTree = "<group>";
@@ -210,6 +242,7 @@
 				CEE5777928614669000EFB9C /* LaunchScreen.storyboard */,
 				CEE5777C28614669000EFB9C /* Info.plist */,
 				CEB332E528614FC200BB59D4 /* Image.swift */,
+				CE0864F0289BAAB700F410AF /* Localizable.strings */,
 			);
 			path = MarketFinder;
 			sourceTree = "<group>";
@@ -242,6 +275,7 @@
 		CEE577A5286146B5000EFB9C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE0864C2289AD44F00F410AF /* Permission */,
 				CEB333082861987700BB59D4 /* AppUpdate */,
 				CEB332F22861516C00BB59D4 /* Splash */,
 			);
@@ -345,6 +379,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = CEE5776228614668000EFB9C;
 			productRefGroup = CEE5776C28614668000EFB9C /* Products */;
@@ -364,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE577B8286148E8000EFB9C /* Podfile in Resources */,
+				CE0864EE289BAAB700F410AF /* Localizable.strings in Resources */,
 				CEE5777B28614669000EFB9C /* LaunchScreen.storyboard in Resources */,
 				CEE5777828614669000EFB9C /* Assets.xcassets in Resources */,
 			);
@@ -449,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0864E5289BA99700F410AF /* String.swift in Sources */,
 				CEB332D928614E9600BB59D4 /* BaseNavigationController.swift in Sources */,
 				CEB332F4286151B900BB59D4 /* Logo.swift in Sources */,
 				CEB332E628614FC300BB59D4 /* Image.swift in Sources */,
@@ -458,6 +495,7 @@
 				CEB332D228614E9600BB59D4 /* BaseTableController.swift in Sources */,
 				CEB332D328614E9600BB59D4 /* BaseController.swift in Sources */,
 				CEB332E128614F7A00BB59D4 /* BaseLabel.swift in Sources */,
+				CE0864D3289B942500F410AF /* UpdateInfoView.swift in Sources */,
 				CEB332D028614E9600BB59D4 /* BaseCollectionView.swift in Sources */,
 				CEB3330A2862A6B300BB59D4 /* AppUpdateController.swift in Sources */,
 				CEB332D528614E9600BB59D4 /* BasePageControl.swift in Sources */,
@@ -466,9 +504,14 @@
 				CEE5776F28614668000EFB9C /* AppDelegate.swift in Sources */,
 				CEB332ED2861511900BB59D4 /* UIView.swift in Sources */,
 				CEB332D128614E9600BB59D4 /* BaseTableViewCell.swift in Sources */,
+				CE0864C4289AD45800F410AF /* PermissionController.swift in Sources */,
+				CE0864D8289B945B00F410AF /* RequireUpdateController.swift in Sources */,
+				CE0864C9289AD76900F410AF /* BaseStackView.swift in Sources */,
 				CEB332D628614E9600BB59D4 /* BaseProgressView.swift in Sources */,
+				CE0864E0289B946700F410AF /* OptionalUpdateController.swift in Sources */,
 				CEB332EE2861511900BB59D4 /* UIImageView.swift in Sources */,
 				CEB332DB28614E9600BB59D4 /* BaseView.swift in Sources */,
+				CE0864CE289AD87200F410AF /* UIStackView.swift in Sources */,
 				CEE5777128614668000EFB9C /* SceneDelegate.swift in Sources */,
 				CEB332DA28614E9600BB59D4 /* BaseImageView.swift in Sources */,
 			);
@@ -506,10 +549,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CE0864F0289BAAB700F410AF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0864EF289BAAB700F410AF /* en */,
+				CE0864F5289BAAE500F410AF /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		CEE5777928614669000EFB9C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CEE5777A28614669000EFB9C /* Base */,
+				CE0864F4289BAAE500F410AF /* ko */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -521,6 +574,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -582,6 +636,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

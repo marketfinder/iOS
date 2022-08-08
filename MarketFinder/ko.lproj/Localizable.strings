@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  MarketFinder
+
+  Created by User on 2022/08/04.
+  
+*/
+
+// 앱 업데이트
+"OptionalUpdateContent" = "Market Finder의 안정적인 서비스를 위해 항상 최신버전을 유지해주세요";
+"RequiredUpdateContent" = "이 버전의 Market Finder는 더 이상 지원하지 않습니다. 앱 스토어에서 최신 앱을 다운로드하여 새로운 기능을 경험하고 Market Finder의 편리함을 계속 누리십시오.";
+"CloseButton" = "닫기";
+"AppUpdateButton" = "업데이트";
+
+// 권한
+"LocationPermissionContent" = "";
+"PushPermissionContent" = "";

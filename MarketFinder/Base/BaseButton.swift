@@ -50,4 +50,8 @@ class BaseButton: UIButton {
         self.layer.masksToBounds = false
         self.layer.cornerRadius = 5
     }
+    
+    override func setTitle(_ title: String?, for state: UIControl.State) {
+        super.setTitle(title?.localized, for: state)
+    }
 }

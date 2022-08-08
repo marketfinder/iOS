@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 class BaseImageView: UIImageView {
     
@@ -19,6 +20,15 @@ class BaseImageView: UIImageView {
         if let image:Image = image {
             self.image = UIImage(named: image.rawValue)
         }
+    }
+    
+    init(name: FontAwesome, style: FontAwesomeStyle, textColor: UIColor, width: CGFloat, height: CGFloat) {
+        super.init(frame: .zero)
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.contentMode = contentMode
+        
+        self.image = UIImage.fontAwesomeIcon(name: name, style: style, textColor: textColor, size: CGSize(width: width, height: height))
     }
     
     required init?(coder: NSCoder) {

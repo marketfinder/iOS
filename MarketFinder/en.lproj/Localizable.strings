@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  MarketFinder
+
+  Created by User on 2022/08/04.
+  
+*/
+
+// App Update
+"OptionalUpdateContent" = "Please always keep the latest version for stable service of Market Finder.";
+"RequiredUpdateContent" = "Please go to the Apple App Store to download the latest update to experience new features and continue enjoying the convenience of the Market Finder App";
+"CloseButton" = "Close";
+"AppUpdateButton" = "Update";
+
+// Permission
+"LocationPermissionContent" = "";
+"PushPermissionContent" = "";

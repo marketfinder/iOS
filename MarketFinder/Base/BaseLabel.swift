@@ -12,8 +12,10 @@ class BaseLabel: UILabel {
     init(title: String) {
         super.init(frame: .zero)
 
-        self.text = title
         self.translatesAutoresizingMaskIntoConstraints = false
+        self.text = title
+        self.numberOfLines = 0
+        self.textAlignment = .center
     }
     
     required init?(coder: NSCoder) {
