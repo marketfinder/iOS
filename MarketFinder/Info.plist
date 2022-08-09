@@ -56,5 +56,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>위치권한 요청</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>위치권한 요청</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>위치권한 요청</string>
+	<key>NSLocationUsageDescription</key>
+	<string>위치권한 요청</string>
 </dict>
 </plist>

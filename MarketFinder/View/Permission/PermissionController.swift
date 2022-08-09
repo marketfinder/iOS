@@ -17,12 +17,12 @@ enum Permission: String {
         
         switch self {
             case .location:
-                iconName = .map
+                iconName = .mapMarkedAlt
             default:
                 iconName = .bell
         }
         
-        return UIImage.fontAwesomeIcon(name: iconName, style: .solid, textColor: .gray, size: CGSize(width: 15, height: 15))
+        return UIImage.fontAwesomeIcon(name: iconName, style: .solid, textColor: .black, size: CGSize(width: 250, height: 250))
     }
     
     var content:String {
@@ -30,16 +30,29 @@ enum Permission: String {
         
         switch self {
             case .location:
-                content = "Required"
+                content = "LocationPermissionContent"
             default:
-                content = "Required"
+                content = "PushPermissionContent"
+        }
+        
+        return content.localized
+    }
+    
+    var buttonTitle:String {
+        var content:String = ""
+        
+        switch self {
+            case .location:
+                content = "RequestLocationPermissionButton"
+            default:
+                content = "RequestPushButton"
         }
         
         return content.localized
     }
 }
 
-class PermissoinController: BaseController {
+class PermissionController: BaseController {
     
     // MARK: - Properties
     private let infoView:BaseView = BaseView()
@@ -47,6 +60,16 @@ class PermissoinController: BaseController {
     private let iconImage:BaseImageView = BaseImageView()
 
     private let contentLabel:BaseLabel = BaseLabel(title: "")
+
+    let requestPermissionButton:BaseButton = {
+        let button:BaseButton = BaseButton()
+        button.backgroundColor = UIColor(named: "DefaultColor")
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor(named: "DefaultColor")?.cgColor
+        button.setTitleColor(.white, for: .normal)
+        
+        return button
+    }()
     
     // MARK: - Life Cycle
     override init() {
@@ -58,10 +81,11 @@ class PermissoinController: BaseController {
         ])
         
         self.view.addSubviews(views: [
-            self.infoView
+            self.infoView,
+            self.requestPermissionButton
         ])
         
-        self.setupLayout()
+        self.setLayouts()
     }
     
     required init?(coder: NSCoder) {
@@ -72,9 +96,10 @@ class PermissoinController: BaseController {
     func setInfoView(permission: Permission) -> Void {
         self.iconImage.image = permission.icon
         self.contentLabel.text = permission.content
+        self.requestPermissionButton.setTitle(permission.buttonTitle, for: .normal)
     }
     
-    private func setupLayout() -> Void {
+    private func setLayouts() -> Void {
         NSLayoutConstraint.activate([
             self.infoView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 25),
             self.infoView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 25),
@@ -90,6 +115,11 @@ class PermissoinController: BaseController {
             self.contentLabel.leftAnchor.constraint(equalTo: self.infoView.leftAnchor),
             self.contentLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: 0),
             self.contentLabel.bottomAnchor.constraint(equalTo: self.infoView.bottomAnchor),
+            
+            self.requestPermissionButton.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -37),
+            self.requestPermissionButton.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 37),
+            self.requestPermissionButton.heightAnchor.constraint(equalToConstant: 35),
+            self.requestPermissionButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -32),
         ])
     }
 }

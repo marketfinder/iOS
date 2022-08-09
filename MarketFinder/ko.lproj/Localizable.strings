@@ -7,11 +7,38 @@
 */
 
 // 앱 업데이트
-"OptionalUpdateContent" = "Market Finder의 안정적인 서비스를 위해 항상 최신버전을 유지해주세요";
-"RequiredUpdateContent" = "이 버전의 Market Finder는 더 이상 지원하지 않습니다. 앱 스토어에서 최신 앱을 다운로드하여 새로운 기능을 경험하고 Market Finder의 편리함을 계속 누리십시오.";
+"OptionalUpdateContent" = "마켓파인더의 안정적인 서비스를 위해 항상 최신버전을 유지해주세요";
+"RequiredUpdateContent" = "이 버전의 마켓파인더는 더 이상 지원하지 않습니다. 앱 스토어에서 최신 앱을 다운로드하여 새로운 기능을 경험하고 마켓파인더의 편리함을 계속 누리십시오.";
 "CloseButton" = "닫기";
 "AppUpdateButton" = "업데이트";
 
 // 권한
-"LocationPermissionContent" = "";
+"LocationPermissionContent" = "마켓파인더는 가까운 곳에 최적의 정보 제공을 제공하고 이를 개선하기 위해 사용자의 정확한 위치가 필요합니다.";
+"RequestLocationPermissionButton" = "위치서비스 켜기";
 "PushPermissionContent" = "";
+"RequestPushPermissionContent" = "";
+
+// 위치서비스 꺼짐
+"ChangeLocationServiceTitle" = "위치 서비스 변겅";
+"ChangeLocationServiceContent" = "마켓파인더는 근처 마트를 찾기 위해 사용자의 정확한 위치가 필요합니다.";
+"ChangeLocationServiceOnButton" = "정확한 위치 켜기";
+"ChangeLocationServiceInputButton" = "위치 직접 입력";
+
+// 미제공 위치 오류
+"NotServiceContent" = "이 지역에서는 마트찾기 기능이 제공되지 않습니다.";
+
+// 마커 클릭 시
+// 영업상태
+"InBusiness" = "영업중";
+"ClosingBusiness" = "영업종료";
+
+// 길찾기
+"FindNavigation" = "길 찾기";
+
+// 필터
+"MarketFilterTitle" = "마트 필터";
+"MarketFilterSaveButton" = "적용하기";
+
+// 공지사항
+"NoticeTitle" = "공지사항";
+"Notice" = "공지";

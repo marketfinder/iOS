@@ -16,6 +16,10 @@
 		CE0864E0289B946700F410AF /* OptionalUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0864DF289B946700F410AF /* OptionalUpdateController.swift */; };
 		CE0864E5289BA99700F410AF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0864E4289BA99700F410AF /* String.swift */; };
 		CE0864EE289BAAB700F410AF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE0864F0289BAAB700F410AF /* Localizable.strings */; };
+		CE08650228A0A43200F410AF /* PushPermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08650128A0A43200F410AF /* PushPermissionController.swift */; };
+		CE08650828A2296300F410AF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08650728A2296300F410AF /* HomeController.swift */; };
+		CE08651028A22A4700F410AF /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08650F28A22A4700F410AF /* CLLocationManager+Rx.swift */; };
+		CE08651528A22A7700F410AF /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08651428A22A7700F410AF /* RxCLLocationManagerDelegateProxy.swift */; };
 		CEB332D028614E9600BB59D4 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB332C328614E9600BB59D4 /* BaseCollectionView.swift */; };
 		CEB332D128614E9600BB59D4 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB332C428614E9600BB59D4 /* BaseTableViewCell.swift */; };
 		CEB332D228614E9600BB59D4 /* BaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB332C528614E9600BB59D4 /* BaseTableController.swift */; };
@@ -74,6 +78,11 @@
 		CE0864EF289BAAB700F410AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CE0864F4289BAAE500F410AF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		CE0864F5289BAAE500F410AF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE0864FC28A09B2E00F410AF /* LocationPermissionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionController.swift; sourceTree = "<group>"; };
+		CE08650128A0A43200F410AF /* PushPermissionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPermissionController.swift; sourceTree = "<group>"; };
+		CE08650728A2296300F410AF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		CE08650F28A22A4700F410AF /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		CE08651428A22A7700F410AF /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
 		CEB332C328614E9600BB59D4 /* BaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		CEB332C428614E9600BB59D4 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		CEB332C528614E9600BB59D4 /* BaseTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableController.swift; sourceTree = "<group>"; };
@@ -149,8 +158,18 @@
 			isa = PBXGroup;
 			children = (
 				CE0864C3289AD45800F410AF /* PermissionController.swift */,
+				CE0864FC28A09B2E00F410AF /* LocationPermissionController.swift */,
+				CE08650128A0A43200F410AF /* PushPermissionController.swift */,
 			);
 			path = Permission;
+			sourceTree = "<group>";
+		};
+		CE08650628A2295C00F410AF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE08650728A2296300F410AF /* HomeController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		CEB332C228614E9600BB59D4 /* Base */ = {
@@ -182,6 +201,8 @@
 				CEB332EC2861511900BB59D4 /* UIImageView.swift */,
 				CE0864CD289AD87200F410AF /* UIStackView.swift */,
 				CE0864E4289BA99700F410AF /* String.swift */,
+				CE08650F28A22A4700F410AF /* CLLocationManager+Rx.swift */,
+				CE08651428A22A7700F410AF /* RxCLLocationManagerDelegateProxy.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -275,6 +296,7 @@
 		CEE577A5286146B5000EFB9C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE08650628A2295C00F410AF /* Home */,
 				CE0864C2289AD44F00F410AF /* Permission */,
 				CEB333082861987700BB59D4 /* AppUpdate */,
 				CEB332F22861516C00BB59D4 /* Splash */,
@@ -486,7 +508,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0864E5289BA99700F410AF /* String.swift in Sources */,
+				CE0864FD28A09B2E00F410AF /* LocationPermissionController.swift in Sources */,
 				CEB332D928614E9600BB59D4 /* BaseNavigationController.swift in Sources */,
+				CE08651528A22A7700F410AF /* RxCLLocationManagerDelegateProxy.swift in Sources */,
 				CEB332F4286151B900BB59D4 /* Logo.swift in Sources */,
 				CEB332E628614FC300BB59D4 /* Image.swift in Sources */,
 				CEE5777328614668000EFB9C /* SplashController.swift in Sources */,
@@ -496,6 +520,7 @@
 				CEB332D328614E9600BB59D4 /* BaseController.swift in Sources */,
 				CEB332E128614F7A00BB59D4 /* BaseLabel.swift in Sources */,
 				CE0864D3289B942500F410AF /* UpdateInfoView.swift in Sources */,
+				CE08651028A22A4700F410AF /* CLLocationManager+Rx.swift in Sources */,
 				CEB332D028614E9600BB59D4 /* BaseCollectionView.swift in Sources */,
 				CEB3330A2862A6B300BB59D4 /* AppUpdateController.swift in Sources */,
 				CEB332D528614E9600BB59D4 /* BasePageControl.swift in Sources */,
@@ -510,7 +535,9 @@
 				CEB332D628614E9600BB59D4 /* BaseProgressView.swift in Sources */,
 				CE0864E0289B946700F410AF /* OptionalUpdateController.swift in Sources */,
 				CEB332EE2861511900BB59D4 /* UIImageView.swift in Sources */,
+				CE08650228A0A43200F410AF /* PushPermissionController.swift in Sources */,
 				CEB332DB28614E9600BB59D4 /* BaseView.swift in Sources */,
+				CE08650828A2296300F410AF /* HomeController.swift in Sources */,
 				CE0864CE289AD87200F410AF /* UIStackView.swift in Sources */,
 				CEE5777128614668000EFB9C /* SceneDelegate.swift in Sources */,
 				CEB332DA28614E9600BB59D4 /* BaseImageView.swift in Sources */,
