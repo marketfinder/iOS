@@ -1,6 +1,7 @@
 PODS:
+  - Alamofire (5.6.2)
   - FontAwesome.swift (1.9.1)
-  - NMapsMap (3.14.1)
+  - NMapsMap (3.15.0)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
@@ -9,6 +10,7 @@ PODS:
   - RxSwift (6.5.0)
 
 DEPENDENCIES:
+  - Alamofire
   - FontAwesome.swift
   - NMapsMap
   - RxCocoa (= 6.5.0)
@@ -16,6 +18,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - FontAwesome.swift
     - NMapsMap
     - RxCocoa
@@ -23,12 +26,13 @@ SPEC REPOS:
     - RxSwift
 
 SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   FontAwesome.swift: 6b52cb7be66eacd28cbfaa0ca7ffd0de4a186a1d
-  NMapsMap: 79bae4e0d7cc5214dd6dabdb95687a1356616556
+  NMapsMap: f151761c088d6516064c59da03ab6503769486e6
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
 
-PODFILE CHECKSUM: 3be561b80bcd6bebd1f0a0faf77527381f02ffc4
+PODFILE CHECKSUM: d82a854cc3c9907c9755bdf21767d945fbb887ae
 
 COCOAPODS: 1.10.1

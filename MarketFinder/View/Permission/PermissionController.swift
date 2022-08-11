@@ -45,7 +45,7 @@ enum Permission: String {
             case .location:
                 content = "RequestLocationPermissionButton"
             default:
-                content = "RequestPushButton"
+                content = "RequestPushPermissionButton"
         }
         
         return content.localized

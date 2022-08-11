@@ -16,10 +16,12 @@
 		CE0864E0289B946700F410AF /* OptionalUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0864DF289B946700F410AF /* OptionalUpdateController.swift */; };
 		CE0864E5289BA99700F410AF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0864E4289BA99700F410AF /* String.swift */; };
 		CE0864EE289BAAB700F410AF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE0864F0289BAAB700F410AF /* Localizable.strings */; };
+		CE0864FD28A09B2E00F410AF /* LocationPermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0864FC28A09B2E00F410AF /* LocationPermissionController.swift */; };
 		CE08650228A0A43200F410AF /* PushPermissionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08650128A0A43200F410AF /* PushPermissionController.swift */; };
 		CE08650828A2296300F410AF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08650728A2296300F410AF /* HomeController.swift */; };
 		CE08651028A22A4700F410AF /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08650F28A22A4700F410AF /* CLLocationManager+Rx.swift */; };
 		CE08651528A22A7700F410AF /* RxCLLocationManagerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08651428A22A7700F410AF /* RxCLLocationManagerDelegateProxy.swift */; };
+		CEA68A0628A48A92006DC725 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA68A0528A48A92006DC725 /* UIImage.swift */; };
 		CEB332D028614E9600BB59D4 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB332C328614E9600BB59D4 /* BaseCollectionView.swift */; };
 		CEB332D128614E9600BB59D4 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB332C428614E9600BB59D4 /* BaseTableViewCell.swift */; };
 		CEB332D228614E9600BB59D4 /* BaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB332C528614E9600BB59D4 /* BaseTableController.swift */; };
@@ -83,6 +85,7 @@
 		CE08650728A2296300F410AF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		CE08650F28A22A4700F410AF /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
 		CE08651428A22A7700F410AF /* RxCLLocationManagerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxCLLocationManagerDelegateProxy.swift; sourceTree = "<group>"; };
+		CEA68A0528A48A92006DC725 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		CEB332C328614E9600BB59D4 /* BaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		CEB332C428614E9600BB59D4 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		CEB332C528614E9600BB59D4 /* BaseTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableController.swift; sourceTree = "<group>"; };
@@ -203,6 +206,7 @@
 				CE0864E4289BA99700F410AF /* String.swift */,
 				CE08650F28A22A4700F410AF /* CLLocationManager+Rx.swift */,
 				CE08651428A22A7700F410AF /* RxCLLocationManagerDelegateProxy.swift */,
+				CEA68A0528A48A92006DC725 /* UIImage.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -539,6 +543,7 @@
 				CEB332DB28614E9600BB59D4 /* BaseView.swift in Sources */,
 				CE08650828A2296300F410AF /* HomeController.swift in Sources */,
 				CE0864CE289AD87200F410AF /* UIStackView.swift in Sources */,
+				CEA68A0628A48A92006DC725 /* UIImage.swift in Sources */,
 				CEE5777128614668000EFB9C /* SceneDelegate.swift in Sources */,
 				CEB332DA28614E9600BB59D4 /* BaseImageView.swift in Sources */,
 			);

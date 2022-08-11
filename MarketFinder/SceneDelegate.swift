@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene:UIWindowScene = scene as? UIWindowScene else { return }
         
         self.window = UIWindow(windowScene: windowScene)
-        self.window?.rootViewController = BaseNavigationController(rootViewController: LocationPermissionController())
+        self.window?.rootViewController = BaseNavigationController(rootViewController: PushPermissionController())
         self.window?.makeKeyAndVisible()
     }
 
