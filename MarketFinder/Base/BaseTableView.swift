@@ -10,6 +10,14 @@ import UIKit
 class BaseTableView: UITableView {
 
     // MARK: - Properties
+    init(cellClass: AnyClass?, forCellReuseIdentifier: String) {
+        super.init(frame: .zero, style: .plain)
+        
+        self.register(cellClass, forCellReuseIdentifier: forCellReuseIdentifier)
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
     init(style: UITableView.Style = .plain) {
         super.init(frame: .zero, style: .plain)
         

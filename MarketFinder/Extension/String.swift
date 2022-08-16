@@ -11,7 +11,9 @@ extension String {
     
     // Application URL
     static var appUrl: String {
-        return "https://apps.apple.com/us/app/naver-map-navigation/id311867728?uo=4&at=11l6hc&app=itunes&ct=fnd"
+        let appleId = ""
+        
+        return "http://itunes.apple.com/lookup?id=\(appleId)"
     }
     
     // Localization

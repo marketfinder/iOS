@@ -16,6 +16,8 @@ class BaseController: UIViewController {
     // MARK: - Life Cycle
     init() {
         super.init(nibName: nil, bundle: nil)
+        
+        self.view.backgroundColor = .white
     }
     
     required init?(coder: NSCoder) {

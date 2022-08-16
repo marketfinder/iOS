@@ -9,13 +9,16 @@ import UIKit
 
 class BaseLabel: UILabel {
     
-    init(title: String) {
+    init(title: String? = nil) {
         super.init(frame: .zero)
 
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.text = title
         self.numberOfLines = 0
         self.textAlignment = .center
+        
+        if let title:String = title {
+            self.text = title.localized
+        }
     }
     
     required init?(coder: NSCoder) {

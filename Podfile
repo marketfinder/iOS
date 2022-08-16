@@ -5,4 +5,5 @@ target 'MarketFinder' do
     pod 'FontAwesome.swift'
     pod 'NMapsMap'
     pod 'Alamofire'
+    pod "RxGesture"
 end
