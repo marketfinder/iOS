@@ -29,6 +29,11 @@
 		CE0EDCA728AB655E0031244E /* NoticeDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EDCA628AB655E0031244E /* NoticeDetailController.swift */; };
 		CE0EDCA928AB660F0031244E /* NoticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EDCA828AB660F0031244E /* NoticeView.swift */; };
 		CE0EDCAB28AB9E200031244E /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EDCAA28AB9E200031244E /* BaseTextView.swift */; };
+		CE0EDCAE28AC99D20031244E /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EDCAD28AC99D20031244E /* ViewModelType.swift */; };
+		CE0EDCB028AC9A4F0031244E /* MartFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EDCAF28AC9A4F0031244E /* MartFilterViewModel.swift */; };
+		CE0EDCB328ACB69F0031244E /* ContactUsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EDCB228ACB69F0031244E /* ContactUsController.swift */; };
+		CE0EDCB528ACB70D0031244E /* ContactUsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EDCB428ACB70D0031244E /* ContactUsViewModel.swift */; };
+		CE0EDCB728AF5A220031244E /* MartInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EDCB628AF5A220031244E /* MartInfoView.swift */; };
 		CEA68A0628A48A92006DC725 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA68A0528A48A92006DC725 /* UIImage.swift */; };
 		CEA68A0E28A60E1D006DC725 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA68A0D28A60E1D006DC725 /* MenuController.swift */; };
 		CEA68A1328A60E67006DC725 /* MartFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA68A1228A60E67006DC725 /* MartFilterController.swift */; };
@@ -51,6 +56,9 @@
 		CEB332EE2861511900BB59D4 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB332EC2861511900BB59D4 /* UIImageView.swift */; };
 		CEB332F4286151B900BB59D4 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB332F3286151B900BB59D4 /* Logo.swift */; };
 		CEB3330A2862A6B300BB59D4 /* AppUpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB333092862A6B300BB59D4 /* AppUpdateController.swift */; };
+		CEBB519528B631AC00FEA475 /* HomeController+NMapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB519428B631AC00FEA475 /* HomeController+NMapDelegate.swift */; };
+		CEBB519728B6355700FEA475 /* NotSupportServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB519628B6355700FEA475 /* NotSupportServiceView.swift */; };
+		CEBB519928B6390600FEA475 /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB519828B6390600FEA475 /* RequestLocationView.swift */; };
 		CEE5776F28614668000EFB9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5776E28614668000EFB9C /* AppDelegate.swift */; };
 		CEE5777128614668000EFB9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5777028614668000EFB9C /* SceneDelegate.swift */; };
 		CEE5777328614668000EFB9C /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE5777228614668000EFB9C /* SplashController.swift */; };
@@ -103,6 +111,11 @@
 		CE0EDCA628AB655E0031244E /* NoticeDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeDetailController.swift; sourceTree = "<group>"; };
 		CE0EDCA828AB660F0031244E /* NoticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeView.swift; sourceTree = "<group>"; };
 		CE0EDCAA28AB9E200031244E /* BaseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
+		CE0EDCAD28AC99D20031244E /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		CE0EDCAF28AC9A4F0031244E /* MartFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartFilterViewModel.swift; sourceTree = "<group>"; };
+		CE0EDCB228ACB69F0031244E /* ContactUsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsController.swift; sourceTree = "<group>"; };
+		CE0EDCB428ACB70D0031244E /* ContactUsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewModel.swift; sourceTree = "<group>"; };
+		CE0EDCB628AF5A220031244E /* MartInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartInfoView.swift; sourceTree = "<group>"; };
 		CEA68A0528A48A92006DC725 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		CEA68A0D28A60E1D006DC725 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		CEA68A1228A60E67006DC725 /* MartFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartFilterController.swift; sourceTree = "<group>"; };
@@ -125,6 +138,9 @@
 		CEB332EC2861511900BB59D4 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		CEB332F3286151B900BB59D4 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		CEB333092862A6B300BB59D4 /* AppUpdateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateController.swift; sourceTree = "<group>"; };
+		CEBB519428B631AC00FEA475 /* HomeController+NMapDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeController+NMapDelegate.swift"; sourceTree = "<group>"; };
+		CEBB519628B6355700FEA475 /* NotSupportServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSupportServiceView.swift; sourceTree = "<group>"; };
+		CEBB519828B6390600FEA475 /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
 		CEE5776B28614668000EFB9C /* MarketFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE5776E28614668000EFB9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE5777028614668000EFB9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +208,10 @@
 			children = (
 				CE0EDC9B28AB4C8D0031244E /* Menu */,
 				CE08650728A2296300F410AF /* HomeController.swift */,
+				CE0EDCB628AF5A220031244E /* MartInfoView.swift */,
+				CEBB519428B631AC00FEA475 /* HomeController+NMapDelegate.swift */,
+				CEBB519628B6355700FEA475 /* NotSupportServiceView.swift */,
+				CEBB519828B6390600FEA475 /* RequestLocationView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -201,6 +221,7 @@
 			children = (
 				CEA68A1228A60E67006DC725 /* MartFilterController.swift */,
 				CE0EDC9928A60FF60031244E /* MartFilterCell.swift */,
+				CE0EDCAF28AC9A4F0031244E /* MartFilterViewModel.swift */,
 			);
 			path = MartFilter;
 			sourceTree = "<group>";
@@ -232,6 +253,23 @@
 				CE0EDCA628AB655E0031244E /* NoticeDetailController.swift */,
 			);
 			path = NoticeDetail;
+			sourceTree = "<group>";
+		};
+		CE0EDCAC28AC99C60031244E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EDCAD28AC99D20031244E /* ViewModelType.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CE0EDCB128ACB6930031244E /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EDCB228ACB69F0031244E /* ContactUsController.swift */,
+				CE0EDCB428ACB70D0031244E /* ContactUsViewModel.swift */,
+			);
+			path = ContactUs;
 			sourceTree = "<group>";
 		};
 		CEB332C228614E9600BB59D4 /* Base */ = {
@@ -317,6 +355,7 @@
 		CEE5776D28614668000EFB9C /* MarketFinder */ = {
 			isa = PBXGroup;
 			children = (
+				CE0EDCAC28AC99C60031244E /* Common */,
 				CEB332EA2861511900BB59D4 /* Extension */,
 				CEB332C228614E9600BB59D4 /* Base */,
 				CEE577A5286146B5000EFB9C /* View */,
@@ -360,6 +399,7 @@
 		CEE577A5286146B5000EFB9C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE0EDCB128ACB6930031244E /* ContactUs */,
 				CE0EDCA028AB58A00031244E /* Notice */,
 				CE0EDC9828A60FE50031244E /* MartFilter */,
 				CE08650628A2295C00F410AF /* Home */,
@@ -573,6 +613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBB519928B6390600FEA475 /* RequestLocationView.swift in Sources */,
 				CE0864E5289BA99700F410AF /* String.swift in Sources */,
 				CE0864FD28A09B2E00F410AF /* LocationPermissionController.swift in Sources */,
 				CEB332D928614E9600BB59D4 /* BaseNavigationController.swift in Sources */,
@@ -593,24 +634,31 @@
 				CEB332D028614E9600BB59D4 /* BaseCollectionView.swift in Sources */,
 				CEB3330A2862A6B300BB59D4 /* AppUpdateController.swift in Sources */,
 				CEB332D528614E9600BB59D4 /* BasePageControl.swift in Sources */,
+				CEBB519728B6355700FEA475 /* NotSupportServiceView.swift in Sources */,
 				CEB332D828614E9600BB59D4 /* BaseTextField.swift in Sources */,
 				CEB332D728614E9600BB59D4 /* BaseTableView.swift in Sources */,
+				CE0EDCB528ACB70D0031244E /* ContactUsViewModel.swift in Sources */,
 				CEE5776F28614668000EFB9C /* AppDelegate.swift in Sources */,
 				CEB332ED2861511900BB59D4 /* UIView.swift in Sources */,
 				CEB332D128614E9600BB59D4 /* BaseTableViewCell.swift in Sources */,
 				CE0864C4289AD45800F410AF /* PermissionController.swift in Sources */,
 				CE0864D8289B945B00F410AF /* RequireUpdateController.swift in Sources */,
 				CE0EDCA428AB5A830031244E /* NoticeCell.swift in Sources */,
+				CE0EDCB328ACB69F0031244E /* ContactUsController.swift in Sources */,
 				CE0EDCA928AB660F0031244E /* NoticeView.swift in Sources */,
 				CE0864C9289AD76900F410AF /* BaseStackView.swift in Sources */,
+				CE0EDCB028AC9A4F0031244E /* MartFilterViewModel.swift in Sources */,
 				CEB332D628614E9600BB59D4 /* BaseProgressView.swift in Sources */,
 				CE0864E0289B946700F410AF /* OptionalUpdateController.swift in Sources */,
 				CE0EDCAB28AB9E200031244E /* BaseTextView.swift in Sources */,
+				CEBB519528B631AC00FEA475 /* HomeController+NMapDelegate.swift in Sources */,
 				CEB332EE2861511900BB59D4 /* UIImageView.swift in Sources */,
+				CE0EDCAE28AC99D20031244E /* ViewModelType.swift in Sources */,
 				CEA68A0E28A60E1D006DC725 /* MenuController.swift in Sources */,
 				CE08650228A0A43200F410AF /* PushPermissionController.swift in Sources */,
 				CEA68A1328A60E67006DC725 /* MartFilterController.swift in Sources */,
 				CEB332DB28614E9600BB59D4 /* BaseView.swift in Sources */,
+				CE0EDCB728AF5A220031244E /* MartInfoView.swift in Sources */,
 				CE08650828A2296300F410AF /* HomeController.swift in Sources */,
 				CE0EDC9A28A60FF60031244E /* MartFilterCell.swift in Sources */,
 				CE0864CE289AD87200F410AF /* UIStackView.swift in Sources */,

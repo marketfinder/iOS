@@ -21,13 +21,13 @@ class BaseButton: UIButton {
         self.setCornerButton()
     }
 
-    init(fontIcon: FontAwesome, style:FontAwesomeStyle, fontSize: CGFloat = 15) {
+    init(fontIcon: FontAwesome, style:FontAwesomeStyle, textColor:UIColor = .black, fontSize: CGFloat = 15) {
         super.init(frame: .zero)
 
         self.translatesAutoresizingMaskIntoConstraints = false
         self.titleLabel?.font = UIFont.fontAwesome(ofSize: fontSize, style: style)
         self.setTitle(String.fontAwesomeIcon(name: fontIcon), for: .normal)
-        self.setTitleColor(.black, for: .normal)
+        self.setTitleColor(textColor, for: .normal)
         
         self.setCornerButton()
     }
